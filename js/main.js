@@ -1,20 +1,17 @@
 'use strict';
 
 const tabBtns = document.querySelectorAll('.solution__btn');
+const tabs =  document.querySelectorAll('.solution__tabs-content');
 
 document.querySelector('.solution__tabs-wrap').addEventListener('click', function(event) {
     let el = event.target;
-
     if(el.classList.contains('solution__btn')) {
         let tar = el.dataset.target;
-
-        document.querySelectorAll('.solution__tabs-content').forEach(function(tab) {
+        tabs.forEach(function(tab) {
             tab.setAttribute('style', 'display: none');
-            
             if (tab.id === tar) {
                 tab.setAttribute('style', 'display: flex');
             };
-
         });
         
         tabBtns.forEach(function(btn) {
@@ -22,4 +19,10 @@ document.querySelector('.solution__tabs-wrap').addEventListener('click', functio
         })
         el.classList.add('active');
     };
-})
+});
+
+$('.main-slider__wrap').slick({
+    infinite: true,
+    prevArrow: $('.main-slider__prev'),
+    nextArrow: $('.main-slider__next')
+  });
