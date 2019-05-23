@@ -8,9 +8,9 @@ document.querySelector('.solution__tabs-wrap').addEventListener('click', functio
     if(el.classList.contains('solution__btn')) {
         let tar = el.dataset.target;
         tabs.forEach(function(tab) {
-            tab.setAttribute('style', 'display: none');
+            tab.classList.add('hide');
             if (tab.id === tar) {
-                tab.setAttribute('style', 'display: flex');
+                tab.classList.remove('hide');
             };
         });
         
