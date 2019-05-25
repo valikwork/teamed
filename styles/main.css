@@ -1566,5 +1566,9 @@ html, body {
   .main-slider {
     margin-bottom: 100px;
   }
+  .main-slider .wrap-first .main-slider__prev, .main-slider .wrap-first .main-slider__next {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
