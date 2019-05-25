@@ -25,4 +25,4 @@ $('.main-slider__wrap').slick({
     infinite: true,
     prevArrow: $('.main-slider__prev'),
     nextArrow: $('.main-slider__next')
-  });
+});

@@ -646,9 +646,16 @@ $mediumBlue: #06767E;
             .marketplace__card{
                 display: flex;
                 flex-direction: column;
-                max-width: 220px;
-                // width: calc(25% - 18px);
                 margin: 0 9px 25px;
+                max-width: 220px;
+                .marketplace__cards-pic-wrap{
+                    max-width: 220px;
+                    .marketplace__cards-pic{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
                 .marketplace__card-descr{
                     background-color: #fff;
                     padding: 10px 10px 50px;
@@ -768,6 +775,7 @@ $mediumBlue: #06767E;
                 color: #FFFFFF;
             }
             .footer__bottom-right{
+                display: flex;
                 a{
                     display: inline-block;
                     color: $lightBlue;
