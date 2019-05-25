@@ -487,11 +487,13 @@ $mediumBlue: #06767E;
     }
 }
 .main-slider{
+    margin-bottom: 150px;
+}
+.main-slider .wrap-first{
     padding: 143px 78px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
     .main-slider__wrap{
         // max-width: 1079px;
         width: 86%;
@@ -505,18 +507,13 @@ $mediumBlue: #06767E;
         color: $mediumBlue;
         cursor: pointer;
     }
-    // .main-slider__prev{
-    //     margin-right: 15px;
-    // }
-    // .main-slider__next{
-    //     margin-left: 15px;
-    // }
     .main-slider__content{
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #F2F2F2;
-        border-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         padding: 66px 0 0;
         max-width: 1109px;
         width: 100%;
@@ -559,56 +556,60 @@ $mediumBlue: #06767E;
                 line-height: 32px;
             }
         }
-        .main-slider__content-bottom{
-            background-color: $darkBlue;
+    }
+}
+.main-slider__content-bottom-wrap{
+    padding: 0 78px;
+}
+.main-slider__content-bottom{
+    background-color: $darkBlue;
+    display: flex;
+    padding: 17px 78px 22px;
+    width: calc(86% - 30px);
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .main-slider__bottom-left{
+        display: flex;
+        flex-direction: column;
+        padding-right: 33px;
+        border-right: 1px solid rgba(255, 255, 255, 0.404);
+        margin-right: 40px;
+        .heading{
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.4;
+            margin-bottom: 28px;
+        }
+        .img-wrap{
             display: flex;
-            padding: 17px 78px 22px;
-            width: 100%;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            .main-slider__bottom-left{
-                display: flex;
-                flex-direction: column;
-                padding-right: 33px;
-                border-right: 1px solid rgba(255, 255, 255, 0.404);
-                margin-right: 40px;
-                .heading{
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: #FFFFFF;
-                    mix-blend-mode: normal;
-                    opacity: 0.4;
-                    margin-bottom: 28px;
-                }
-                .img-wrap{
-                    display: flex;
-                    align-items: center;
-                    img:first-child{
-                        margin-right: 16px;
-                    }
-                }
+            align-items: center;
+            img:first-child{
+                margin-right: 16px;
             }
-            .main-slider__bottom-right{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                .heading{
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: #FFFFFF;
-                    mix-blend-mode: normal;
-                    opacity: 0.4;
-                    margin-bottom: 18px;
-                }
-                .img-wrap{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    img{
-                        margin: 5px;
-                    }
-                }
+        }
+    }
+    .main-slider__bottom-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .heading{
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.4;
+            margin-bottom: 18px;
+        }
+        .img-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            img{
+                margin: 5px;
             }
         }
     }
