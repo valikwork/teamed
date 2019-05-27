@@ -452,7 +452,123 @@
         line-height: 22px;
     }
 }
-
-
+@media screen and (max-width: 768px){
+    .teammate-bnr h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .teammate-bnr .teammate-bnr__descr{
+        margin-bottom: 30px;
+    }
+    .teammate-bnr{
+        padding: 90px 30px;
+    }
+    .teammate-card{
+        padding: 100px 30px;
+    }
+    .teammate-card .teammate-card__wrap .card-heading{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .teammate-card .teammate-card__wrap .card-descr{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .teammate-top{
+        padding: 100px 30px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-heading,
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-link{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-link{
+        padding: 24px;
+        margin-bottom: 35px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-text,
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading-text{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .teammate-bottom .teammate-bottom__wrap{
+        margin: 0 auto 150px;
+    }
+    .teammate-btn .teammate-btn__wrap .teammate-btn__heading{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .teammate-btn .teammate-btn__wrap{
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .teammate-card .teammate-card__wrap{
+        padding: 60px 15px;
+    }
+    .teammate-card .teammate-card__wrap .card-heading {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .teammate-top .teammate-top__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__img-wrap{
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr{
+        width: 100%;
+        align-items: center;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-text, 
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading-text {
+        text-align: center;
+    }
+    .teammate-top {
+        padding: 100px 15px;
+    }
+    .teammate-card {
+        padding: 100px 15px;
+    }
+    .teammate-bnr{
+        padding: 90px 15px;
+    }
+    .teammate-bottom{
+        padding: 100px 15px 0;
+    }
+    .teammate-bottom .teammate-bottom__wrap{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__img-wrap{
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr{
+        width: 100%;
+        margin-right: 0;
+    }
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading{
+        text-align: center;
+    }
+    .teammate-btn{
+        padding: 0 15px;
+    }
+    .teammate-btn .teammate-btn__wrap .teammate-btn__heading{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .teammate-btn .teammate-btn__wrap .teammate-btn__btn{ 
+        max-width: 200px;
+        font-size: 14px;
+    }
+}
 
 

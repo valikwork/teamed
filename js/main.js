@@ -1,12 +1,12 @@
 'use strict';
 
-const tabBtns = document.querySelectorAll('.solution__btn');
-const tabs =  document.querySelectorAll('.solution__tabs-content');
+var tabBtns = document.querySelectorAll('.solution__btn');
+var tabs =  document.querySelectorAll('.solution__tabs-content');
 
 document.querySelector('.solution__tabs-wrap').addEventListener('click', function(event) {
-    let el = event.target;
+    var el = event.target;
     if(el.classList.contains('solution__btn')) {
-        let tar = el.dataset.target;
+        var tar = el.dataset.target;
         tabs.forEach(function(tab) {
             tab.classList.add('hide');
             if (tab.id === tar) {
