@@ -1,5 +1,5 @@
 @media screen and (max-width: 1080px){
-    .main-slider .wrap-first{
+    .wrap-first{
         padding: 143px 60px 0;
     }
     .main-slider__content-bottom-wrap {
@@ -10,16 +10,16 @@
     }
 }
 @media screen and (max-width: 1024px){
-    .main-slider .wrap-first .main-slider__content .main-slider__content-middle{
+    .wrap-first .main-slider__content .main-slider__content-middle{
         flex-direction: column;
         align-items: center;
         padding: 0 60px;
     }
-    .main-slider .wrap-first .main-slider__content .main-slider__content-middle .main-slider__content-icon{
+    .wrap-first .main-slider__content .main-slider__content-middle .main-slider__content-icon{
         margin-right: 0;
         margin-bottom: 20px;
     }
-    .main-slider .wrap-first .main-slider__content h3{
+    .wrap-first .main-slider__content h3{
         margin-bottom: 15px;
     }
     .footer .footer-wrap{
@@ -86,10 +86,10 @@
     .main-circle .main-circle__wrap .main-circle__heading{
         font-size: 30px;
     }
-    .main-slider .wrap-first{
+    .wrap-first{
         padding: 100px 60px 0;
     }
-    .main-slider .wrap-first .main-slider__content{
+    .wrap-first .main-slider__content{
         padding: 30px 0 0;
     }
     .marketplace{
@@ -102,6 +102,9 @@
         width: 100%;
     }
 }
+
+            // 768 px \\
+
 @media screen and (max-width: 768px){
     .solution .solution__tabs-wrap{
         flex-direction: column;
@@ -121,14 +124,14 @@
         padding: 10px;
         margin: 0 5px;
     }
-    .main-slider .wrap-first .main-slider__content h3{
+    .wrap-first .main-slider__content h3{
         font-size: 24px;
     }
-    .main-slider .wrap-first .main-slider__content .main-slider__content-middle{
+    .wrap-first .main-slider__content .main-slider__content-middle{
         padding: 0 30px;
         margin-bottom: 25px;
     }
-    .main-slider .wrap-first{
+    .wrap-first{
         padding: 100px 30px 0;
     }
     .main-slider__content-bottom-wrap {
@@ -242,11 +245,11 @@
         width: 100%;
         justify-content: space-around;
     }
-    .main-slider .wrap-first .main-slider__prev, .main-slider .wrap-first .main-slider__next{
+    .wrap-first .main-slider__prev, .wrap-first .main-slider__next{
         font-size: 30px;
         line-height: 30px;
     }
-    .main-slider .wrap-first .main-slider__content .main-slider__content-middle .main-slider__content-text{
+    .wrap-first .main-slider__content .main-slider__content-middle .main-slider__content-text{
         font-size: 15px;
         line-height: 26px;
     }
@@ -258,7 +261,101 @@
         line-height: 19px;
         margin-bottom: 25px;
     }
+    .teammate-bnr h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .teammate-bnr .teammate-bnr__descr{
+        margin-bottom: 30px;
+    }
+    .teammate-bnr{
+        padding: 90px 30px;
+    }
+    .teammate-card{
+        padding: 100px 30px;
+    }
+    .teammate-card .teammate-card__wrap .card-heading{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .teammate-card .teammate-card__wrap .card-descr{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .teammate-top{
+        padding: 100px 30px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-heading,
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-link{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-link{
+        padding: 24px;
+        margin-bottom: 35px;
+    }
+    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-text,
+    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading-text{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .teammate-bottom .teammate-bottom__wrap{
+        margin: 0 auto 150px;
+    }
+    .teammate-btn .teammate-btn__wrap .teammate-btn__heading{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .teammate-btn .teammate-btn__wrap{
+        padding: 60px 0;
+    }
+    .about-bnr__wrap h1{
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .about-bnr__wrap .about-bnr__descr{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .about-bnr{
+        margin-bottom: 100px;
+    }
+    .about-bnr__wrap{
+        padding: 90px 15px;
+    }
+    .about-card .about-card__wrap .about-card__heading{
+        font-size: 33px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .about-card .about-card__wrap .about-card__text{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .about-card{
+        padding: 0 15px;
+        margin-bottom: 100px;
+    }
+    .about-boxs{
+        padding: 100px 15px 0;
+        margin-bottom: 100px;
+    }
+    .about-boxs .about-boxs__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-boxs .about-boxs__wrap .about-boxs__item{
+        width: 75%;
+        margin: 0 0 20px;
+    }
 }
+
+                // 600 px \\
+
 @media screen and (max-width: 600px){
     .main-specialists{
         flex-direction: column;
@@ -347,7 +444,7 @@
         line-height: 27px;
         font-size: 20px;
     }
-    .main-slider .wrap-first .main-slider__content h3 {
+    .wrap-first .main-slider__content h3 {
         font-size: 20px;
         text-align: center;
     }
@@ -422,7 +519,7 @@
     .marketplace .marketplace__content .marketplace__cards-box .marketplace__card .marketplace__card-info .marketplace__card-stars{
         font-size: 12px;
     }
-    .main-slider .wrap-first{
+    .wrap-first{
         padding: 100px 0 0;
     }
     .main-slider__content-bottom-wrap {
@@ -441,72 +538,16 @@
         max-height: 192px;
         width: 100%;
     }
-    .main-slider .wrap-first .main-slider__content{
+    .wrap-first .main-slider__content{
         margin: 0 5px;
     }
     .main-slider {
         margin-bottom: 100px;
     }
-    .main-slider .wrap-first .main-slider__prev, .main-slider .wrap-first .main-slider__next{
+    .wrap-first .main-slider__prev, .wrap-first .main-slider__next{
         font-size: 22px;
         line-height: 22px;
     }
-}
-@media screen and (max-width: 768px){
-    .teammate-bnr h1{
-        font-size: 40px;
-        line-height: 50px;
-    }
-    .teammate-bnr .teammate-bnr__descr{
-        margin-bottom: 30px;
-    }
-    .teammate-bnr{
-        padding: 90px 30px;
-    }
-    .teammate-card{
-        padding: 100px 30px;
-    }
-    .teammate-card .teammate-card__wrap .card-heading{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .teammate-card .teammate-card__wrap .card-descr{
-        font-size: 18px;
-        line-height: 27px;
-    }
-    .teammate-top{
-        padding: 100px 30px;
-    }
-    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-heading,
-    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading{
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-link{
-        font-size: 19px;
-        line-height: 23px;
-    }
-    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-link{
-        padding: 24px;
-        margin-bottom: 35px;
-    }
-    .teammate-top .teammate-top__wrap .teammate-top__descr .teammate-top__descr-text,
-    .teammate-bottom .teammate-bottom__wrap .teammate-bottom__descr .teammate-bottom__descr-heading-text{
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .teammate-bottom .teammate-bottom__wrap{
-        margin: 0 auto 150px;
-    }
-    .teammate-btn .teammate-btn__wrap .teammate-btn__heading{
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .teammate-btn .teammate-btn__wrap{
-        padding: 60px 0;
-    }
-}
-@media screen and (max-width: 600px){
     .teammate-card .teammate-card__wrap{
         padding: 60px 15px;
     }
@@ -569,6 +610,26 @@
         max-width: 200px;
         font-size: 14px;
     }
+    .about-bnr__wrap h1{
+        text-align: center;
+    }
+    .about-bnr__wrap .about-bnr__btns button{
+        font-size: 15px;
+        line-height: 15px; 
+    }
+    .about-bnr__wrap .about-bnr__btns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-bnr__wrap .about-bnr__btns .green{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .about-bnr__wrap .about-bnr__descr{
+        margin-bottom: 20px;
+    }
+    .about-card .about-card__wrap .about-card__heading{
+        margin-bottom: 15px;
+    }
 }
-
 

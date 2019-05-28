@@ -3,6 +3,18 @@
 var tabBtns = document.querySelectorAll('.solution__btn');
 var tabs =  document.querySelectorAll('.solution__tabs-content');
 
+$('.main-slider__wrap').slick({
+    infinite: true,
+    prevArrow: $('.main-slider__prev'),
+    nextArrow: $('.main-slider__next')
+});
+$('.services-slick').slick({
+    infinite: true,
+    prevArrow: $('.main-slider__prev'),
+    nextArrow: $('.main-slider__next')
+});
+
+
 document.querySelector('.solution__tabs-wrap').addEventListener('click', function(event) {
     var el = event.target;
     if(el.classList.contains('solution__btn')) {
@@ -19,10 +31,4 @@ document.querySelector('.solution__tabs-wrap').addEventListener('click', functio
         })
         el.classList.add('active');
     };
-});
-
-$('.main-slider__wrap').slick({
-    infinite: true,
-    prevArrow: $('.main-slider__prev'),
-    nextArrow: $('.main-slider__next')
 });
