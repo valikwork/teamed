@@ -43,6 +43,28 @@
     .hiring-services{
         padding: 100px 30px;
     }
+    .services-table .tab-wrap .row.tab-head .tab-cel{
+        writing-mode: vertical-rl;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .services-content .services-marketplace__wrap .services-marketplace__imgs .services-marketplace__img-box{
+        flex-direction: column;
+    }
+    .services-content .services-marketplace__wrap .services-marketplace__imgs .services-marketplace__img-box .services-marketplace__img-descr{
+        transform: translateX(0);
+        align-items: center;
+        padding: 10px 5px;
+    }
+    .services-content .services-marketplace__wrap .services-marketplace__imgs .services-marketplace__img-box .services-marketplace__img{
+        margin-bottom: 15px;
+    }
+    .services-content .services-marketplace__wrap .services-marketplace__imgs{
+        transform: translateX(0);
+    }
+    .services-content .services-marketplace__wrap{
+        justify-content: space-between;
+    }
 }
 @media screen and (max-width: 900px){
     .solution .solution__tabs-wrap .solution__tabs-btn{
@@ -352,6 +374,116 @@
         width: 75%;
         margin: 0 0 20px;
     }
+    .services-table .tab-wrap .row .tab-cel.first{
+        max-width: 150px;
+        font-size: 10px;
+        padding: 0 5px;
+    }
+    .services-table .tab-wrap .row.tab-head,
+    .services-table .tab-wrap .row.tab-head .tab-cel.head{
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .services-table .tab-wrap .row .tab-cel.first .big{
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .services-table .tab-wrap .row .tab-cel.check .text{
+        writing-mode: vertical-rl;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .services-bnr{
+        padding: 89px 15px 100px;
+    }
+    .services-bnr .services-bnr__wrap h1{
+        font-size: 35px;
+        line-height: 48px;
+    }
+    .services-bnr .services-bnr__wrap .services-bnr__descr{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .services-bnr .services-bnr__wrap .services-bnr__btns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-bnr .services-bnr__wrap .services-bnr__btns .green{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .services-content.marketplace{
+        padding: 100px 15px;
+        margin-bottom: 50px;
+    }
+    .services-content .services-marketplace__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-content .services-marketplace__wrap .services-marketplace__descr{
+        margin-right: 0;
+        margin-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services-content.recruit{
+        padding: 100px 15px;
+    }
+    .services-content .services-recruit__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-content .services-recruit__wrap .services-recruit__descr{
+        margin-right: 0;
+        margin-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services-content .services-recruit__wrap .services-recruit__cards .services-recruit__card-item:not(:last-of-type){
+        margin-bottom: 35px;
+    }
+    .services-table{
+        margin-bottom: 100px;
+        padding: 100px 15px 0;
+    }
+    .services-table .table-bnr{
+        padding: 35px 15px;
+    }
+    .services-table .table-bnr .table__heading{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .services-table .table-bnr .table__descr {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .services-form{
+        padding: 0 15px;
+    }
+    .services-form .services-form__wrap{
+        padding: 30px;
+    }
+    .services-form .services-form__wrap .services-form__heading{
+        font-size: 31px;
+        line-height: 36px;
+    }
+    .services-form .services-form__wrap .form{
+        flex-direction: column;
+    }
+    .services-form .services-form__wrap .form .form__item:nth-of-type(odd){
+        margin-right: 0;
+    }
+    .services-form .services-form__wrap .form .form__item{
+        width: 100%;
+    }
+    .services-form .services-form__wrap .form .form__item .form__label{
+        font-size: 12px;
+        line-height: 17px;
+    }
 }
 
                 // 600 px \\
@@ -632,4 +764,9 @@
         margin-bottom: 15px;
     }
 }
-
+@media screen and (max-width: 425px){
+    .services-table .tab-wrap .row .tab-cel.first{
+        max-width: 75px;
+        padding: 5px;
+    }
+}
