@@ -81,6 +81,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/FontAwesome.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body{
     font-family: 'Muli', Arial, Helvetica, sans-serif;
@@ -1611,7 +1617,8 @@ button{
     margin-bottom: 138px;
     .experts-bnr__wrap{
        margin: 0 auto;
-       max-width: 700px;
+       max-width: 760px;
+       padding: 0 30px;
         .experts-bnr__heading{
             font-weight: 800;
             font-size: 46px;
@@ -1661,11 +1668,14 @@ button{
     margin-bottom: 145px;
     .experts-circle__img-wrap{
         margin: 0 auto;
-        max-width: 382px;
+        max-width: 442px;
         position: relative;
+        padding: 0 30px;
         img{
             border: 3px solid $lightBlue;
             border-radius: 50%;
+            width: 100%;
+            height: 100%;
         }
         .experts-circle__heading{
             position: absolute;
@@ -1720,7 +1730,6 @@ button{
                     color: #fff;
                 }
             }
-            
         }
         .expert-accordion__item-body{
             padding: 20px 40px;
@@ -1732,9 +1741,174 @@ button{
         }
     }
 }
-
-
-
+.experts-card{
+    margin-bottom: 150px;
+    .experts-card__wrap{
+        max-width: 1000px;
+        padding: 0 30px;
+        margin: 0 auto;
+        .experts-card__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('../img/experts-card.png');
+            background-size: cover;
+            padding: 72px 15px;
+            border: 1px solid $darkBlue;
+            border-radius: 10px;
+            .experts-card__heading{
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 45px;
+                text-align: center;
+                color: $darkBlue;
+                margin-bottom: 15px;
+            }
+            .experts-card__text{
+                max-width: 690px;
+                text-align: center;
+                font-size: 20px;
+                line-height: 32px;
+                color: #000000;
+            }
+        }
+    }
+}
+.experts-tabs{
+    margin-bottom: 137px;
+    .experts-tabs__wrap{
+        max-width: 1000px;
+        padding: 0 30px;
+        margin: 0 auto;
+        display: flex;
+        .experts-tabs__btns-box{
+            margin-right: 125px;
+            display: flex;
+            flex-direction: column;
+            max-width: 275px;
+            width: 100%;
+            .experts-tabs__btn{
+                background-color: #EFEFEF;
+                width: 100%;
+                padding: 30px 0;
+                font-weight: 800;
+                font-size: 26px;
+                line-height: 33px;
+                color: $mediumBlue;
+                &:not(:last-of-type){
+                    margin-bottom: 17px;
+                }
+                &.active{
+                    background-color: $mediumBlue;
+                    color: #fff;
+                }
+            }
+        }
+        .experts-tabs__card-box{
+            max-width: 538px;
+            .experts-tabs__card{
+                background: #EFEFEF;
+                border: 1px solid #06767E;
+                border-radius: 10px;
+                padding: 44px 70px;
+                opacity: 1;
+                transition: .6s opacity;
+                transform: scale(1);
+                &.hide{
+                    padding: 0;
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
+                    transform: scale(0);
+                    transition: .6s transform;
+                }
+                .experts-tabs__card-text{
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: $darkBlue;
+                    margin-bottom: 25px;
+                }
+                .list-head{
+                    font-size: 22px;
+                    line-height: 28px;
+                    color: #06767E;
+                    margin-bottom: 25px;
+                    display: block;
+                }
+                .experts-tabs__list{
+                    padding-left: 28px;
+                    
+                    .experts-tabs__list-item{
+                        position: relative;
+                        &::before{
+                            content: '\f00c';
+                            color: #4BC3A4;
+                            font-family: FontAwesome;
+                            position: absolute;
+                            top: 0;
+                            left: -30px;
+                        }
+                        &:not(:last-of-type){
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.experts-contact{
+    padding-top: 150px;
+    margin-bottom: -50px;
+    position: relative;
+    .experts-contact__wrap{
+        max-width: 1146px;
+        padding: 0 30px;
+        margin: 0 auto;
+        .experts-contact__content{
+            border-radius: 10px;
+            background-color: $lightBlue;
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            .experts-contact__heading{
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 45px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+            .experts-contact__btns{
+                display: flex;
+                justify-content: center;
+                a{
+                    padding: 14px 0;
+                    font-family: 'verbcondregular', Arial, Helvetica, sans-serif;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border-radius: 6px;
+                }
+                .white{
+                    background-color: #FFFFFF;
+                    margin-right: 10px;
+                    color: $mediumBlue;
+                    max-width: 192px;
+                    width: 100%;
+                }
+                .green{
+                    border: 2px solid #FFFFFF;
+                    color: #fff;
+                    background-color: transparent;
+                    max-width: 267px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 
 
 @import 'media';
